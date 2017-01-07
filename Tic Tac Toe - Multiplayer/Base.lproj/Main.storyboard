@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TB3-NS-XVb">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tic_Tac_Toe___Multiplayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="field" translatesAutoresizingMaskIntoConstraints="NO" id="WUe-Te-xjf">
+                                <rect key="frame" x="140" y="82" width="320" height="503"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="4oK-LQ-YiQ"/>
+                                    <constraint firstAttribute="height" constant="503" id="b2C-R9-VOQ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V9H-wE-75S" customClass="TTTImageView" customModule="Tic_Tac_Toe___Multiplayer" customModuleProvider="target">
+                                <rect key="frame" x="175" y="309" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Gat-NP-Vgd"/>
+                                    <constraint firstAttribute="width" constant="50" id="JiL-qd-IB4"/>
+                                </constraints>
+                            </imageView>
+                            <imageView tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DcF-E4-Hi6" customClass="TTTImageView" customModule="Tic_Tac_Toe___Multiplayer" customModuleProvider="target">
+                                <rect key="frame" x="275" y="309" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="O6L-Ng-GSj"/>
+                                    <constraint firstAttribute="width" constant="50" id="anH-kS-MaE"/>
+                                </constraints>
+                            </imageView>
+                            <imageView tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x4Y-Sv-yDf" customClass="TTTImageView" customModule="Tic_Tac_Toe___Multiplayer" customModuleProvider="target">
+                                <rect key="frame" x="382" y="309" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="qkC-k3-Pgo"/>
+                                    <constraint firstAttribute="height" constant="50" id="tlP-5J-fCq"/>
+                                </constraints>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tp3-Ua-SqN" customClass="TTTImageView" customModule="Tic_Tac_Toe___Multiplayer" customModuleProvider="target">
+                                <rect key="frame" x="175" y="216" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Awd-zT-HDo"/>
+                                    <constraint firstAttribute="height" constant="50" id="Img-SQ-kvg"/>
+                                </constraints>
+                            </imageView>
+                            <imageView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ldZ-II-cid" customClass="TTTImageView" customModule="Tic_Tac_Toe___Multiplayer" customModuleProvider="target">
+                                <rect key="frame" x="275" y="216" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Rs2-7M-GX5"/>
+                                    <constraint firstAttribute="width" constant="50" id="Wyr-qf-TFi"/>
+                                </constraints>
+                            </imageView>
+                            <imageView tag="8" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T8z-5b-tcU" customClass="TTTImageView" customModule="Tic_Tac_Toe___Multiplayer" customModuleProvider="target">
+                                <rect key="frame" x="382" y="409" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="AKU-ac-6fF"/>
+                                    <constraint firstAttribute="height" constant="50" id="cfV-WA-fAV"/>
+                                </constraints>
+                            </imageView>
+                            <imageView tag="7" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xNV-wt-2XL" customClass="TTTImageView" customModule="Tic_Tac_Toe___Multiplayer" customModuleProvider="target">
+                                <rect key="frame" x="275" y="409" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="E8G-ns-GA8"/>
+                                    <constraint firstAttribute="width" constant="50" id="J7d-vs-jZX"/>
+                                </constraints>
+                            </imageView>
+                            <imageView tag="6" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eML-Q2-25W" customClass="TTTImageView" customModule="Tic_Tac_Toe___Multiplayer" customModuleProvider="target">
+                                <rect key="frame" x="175" y="409" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="6md-9R-EbR"/>
+                                    <constraint firstAttribute="height" constant="50" id="I2T-jt-cZL"/>
+                                </constraints>
+                            </imageView>
+                            <imageView tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0hm-6t-LBW" customClass="TTTImageView" customModule="Tic_Tac_Toe___Multiplayer" customModuleProvider="target">
+                                <rect key="frame" x="382" y="216" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="KtY-1x-6xE"/>
+                                    <constraint firstAttribute="width" constant="50" id="bMQ-0W-2R5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DcF-E4-Hi6" firstAttribute="centerY" secondItem="WUe-Te-xjf" secondAttribute="centerY" id="3Cv-kp-8ZR"/>
+                            <constraint firstItem="WUe-Te-xjf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="79W-m6-zTA"/>
+                            <constraint firstItem="V9H-wE-75S" firstAttribute="centerY" secondItem="WUe-Te-xjf" secondAttribute="centerY" id="BEo-k4-osn"/>
+                            <constraint firstItem="ldZ-II-cid" firstAttribute="centerX" secondItem="WUe-Te-xjf" secondAttribute="centerX" id="C0H-Az-hPD"/>
+                            <constraint firstItem="eML-Q2-25W" firstAttribute="centerX" secondItem="V9H-wE-75S" secondAttribute="centerX" id="EWU-MD-6wQ"/>
+                            <constraint firstItem="DcF-E4-Hi6" firstAttribute="centerX" secondItem="WUe-Te-xjf" secondAttribute="centerX" id="NB3-R4-1IA"/>
+                            <constraint firstItem="T8z-5b-tcU" firstAttribute="centerY" secondItem="xNV-wt-2XL" secondAttribute="centerY" id="NR0-Qr-v7y"/>
+                            <constraint firstItem="tp3-Ua-SqN" firstAttribute="centerY" secondItem="ldZ-II-cid" secondAttribute="centerY" id="Nz1-AN-off"/>
+                            <constraint firstItem="T8z-5b-tcU" firstAttribute="centerX" secondItem="x4Y-Sv-yDf" secondAttribute="centerX" id="OCh-66-4c6"/>
+                            <constraint firstItem="DcF-E4-Hi6" firstAttribute="top" secondItem="ldZ-II-cid" secondAttribute="bottom" constant="43" id="Svf-25-SS9"/>
+                            <constraint firstItem="0hm-6t-LBW" firstAttribute="centerY" secondItem="ldZ-II-cid" secondAttribute="centerY" id="VkE-jF-9o7"/>
+                            <constraint firstItem="x4Y-Sv-yDf" firstAttribute="centerY" secondItem="WUe-Te-xjf" secondAttribute="centerY" id="b7E-8N-Tgz"/>
+                            <constraint firstItem="tp3-Ua-SqN" firstAttribute="centerX" secondItem="V9H-wE-75S" secondAttribute="centerX" id="dWx-Eq-oXE"/>
+                            <constraint firstItem="eML-Q2-25W" firstAttribute="centerY" secondItem="xNV-wt-2XL" secondAttribute="centerY" id="e3X-nT-f5u"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WUe-Te-xjf" secondAttribute="bottom" constant="15" id="h9E-89-G0A"/>
+                            <constraint firstItem="DcF-E4-Hi6" firstAttribute="leading" secondItem="V9H-wE-75S" secondAttribute="trailing" constant="50" id="mIi-vG-wpR"/>
+                            <constraint firstItem="0hm-6t-LBW" firstAttribute="centerX" secondItem="x4Y-Sv-yDf" secondAttribute="centerX" id="mb6-aL-HHk"/>
+                            <constraint firstItem="x4Y-Sv-yDf" firstAttribute="leading" secondItem="DcF-E4-Hi6" secondAttribute="trailing" constant="57" id="oPt-Wq-FwV"/>
+                            <constraint firstItem="xNV-wt-2XL" firstAttribute="top" secondItem="DcF-E4-Hi6" secondAttribute="bottom" constant="50" id="qM6-Jd-Oau"/>
+                            <constraint firstItem="xNV-wt-2XL" firstAttribute="centerX" secondItem="WUe-Te-xjf" secondAttribute="centerX" id="u8R-kP-P0q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Chx-GF-KKx">
+                        <barButtonItem key="leftBarButtonItem" title="Connect" id="e0O-OQ-KWT">
+                            <connections>
+                                <action selector="connectWithPlayer:" destination="BYZ-38-t0r" id="7Tc-wn-qpg"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="New Game" id="a5G-Rc-fTx">
+                            <connections>
+                                <action selector="newGame:" destination="BYZ-38-t0r" id="MUD-Wk-Rcu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outletCollection property="fields" destination="tp3-Ua-SqN" collectionClass="NSMutableArray" id="v7y-sb-wga"/>
+                        <outletCollection property="fields" destination="ldZ-II-cid" collectionClass="NSMutableArray" id="slS-OY-uDF"/>
+                        <outletCollection property="fields" destination="0hm-6t-LBW" collectionClass="NSMutableArray" id="wqq-BC-W5a"/>
+                        <outletCollection property="fields" destination="V9H-wE-75S" collectionClass="NSMutableArray" id="OAE-Ts-sy1"/>
+                        <outletCollection property="fields" destination="DcF-E4-Hi6" collectionClass="NSMutableArray" id="Vch-da-y4D"/>
+                        <outletCollection property="fields" destination="x4Y-Sv-yDf" collectionClass="NSMutableArray" id="BCt-Mb-IGu"/>
+                        <outletCollection property="fields" destination="eML-Q2-25W" collectionClass="NSMutableArray" id="X7G-2t-SWc"/>
+                        <outletCollection property="fields" destination="xNV-wt-2XL" collectionClass="NSMutableArray" id="TA7-T3-OSO"/>
+                        <outletCollection property="fields" destination="T8z-5b-tcU" collectionClass="NSMutableArray" id="AGJ-Ld-UEg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="919" y="1089"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tX9-eP-PuG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TB3-NS-XVb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QIX-d3-cji">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GeO-wy-t0B"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5eE-At-loj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="186" y="1089"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="field" width="320" height="503"/>
+    </resources>
+</document>
